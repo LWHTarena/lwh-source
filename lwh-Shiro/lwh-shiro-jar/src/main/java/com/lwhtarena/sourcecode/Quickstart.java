@@ -57,10 +57,21 @@ public class Quickstart {
             try {
                 currentUser.login(token);
             }catch (UnknownAccountException uae){
+                /*******************************
+                 * 若没有指定账户，则shiro将会抛出
+                 * UnknownAccountException 异常
+                 *******************************/
                 log.info("没有用户名的用户:"+token.getPrincipal());
             }catch (IncorrectCredentialsException ice){
+                /*****************************************
+                 * 若账户存在，但密码不匹配，则shiro会
+                 * 抛出 IncorrectCredentialsException异常
+                 *****************************************/
                 log.info("帐户密码不正确！");
             }catch (LockedAccountException lae){
+                /****************
+                 * 用户被锁定异常
+                 ****************/
                 log.info("用户名帐户已锁定。请与您的管理员联系以解锁它");
             }catch (AuthenticationException ae){
                 log.info("");
