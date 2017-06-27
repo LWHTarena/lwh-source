@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="lwh-lucene5.5 (1):war exploded">
+    <output-path>$PROJECT_DIR$/lwh-lucene55/target/lwh-lucene5.5</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="lwh-lucene5.5 (1)" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/lwh-lucene55/target/lwh-lucene5.5/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="lwh-lucene5.5 (1)/web/Web" />
+    </root>
+  </artifact>
+</component>

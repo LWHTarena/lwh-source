@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lwh-lucene5.5:war">
+    <output-path>$PROJECT_DIR$/lwh-lucene55/target</output-path>
+    <root id="archive" name="lwh-lucene5.5.war">
+      <element id="artifact" artifact-name="lwh-lucene5.5:war exploded" />
+    </root>
+  </artifact>
+</component>

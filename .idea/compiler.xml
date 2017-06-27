@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lwh-agent-monitor" />
+        <module name="lwh-bbs" />
+        <module name="lwh-common" />
+        <module name="lwh-jpa" />
+        <module name="lwh-JVM" />
+        <module name="lwh-lucene5" />
+        <module name="lwh-lucene5.5 (1)" />
+        <module name="lwh-mongoDB" />
+        <module name="lwh-mybatis" />
+        <module name="lwh-NoSQL" />
+        <module name="lwh-quartz" />
+        <module name="lwh-redis" />
+        <module name="lwh-RESTful" />
+        <module name="lwh-shiro-jar" />
+        <module name="lwh-Solr" />
+        <module name="lwh-spring-security" />
+        <module name="lwh-spring4" />
+        <module name="lwh-springmvc4" />
+        <module name="lwh-sso" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lwh-agent-monitor" target="1.5" />
+      <module name="lwh-bbs" target="1.5" />
+      <module name="lwh-common" target="1.5" />
+      <module name="lwh-jpa" target="1.5" />
+      <module name="lwh-JVM" target="1.5" />
+      <module name="lwh-lucene5" target="1.5" />
+      <module name="lwh-lucene5.5" target="1.5" />
+      <module name="lwh-lucene5.5 (1)" target="1.5" />
+      <module name="lwh-mongoDB" target="1.5" />
+      <module name="lwh-mybatis" target="1.5" />
+      <module name="lwh-NoSQL" target="1.5" />
+      <module name="lwh-quartz" target="1.5" />
+      <module name="lwh-redis" target="1.5" />
+      <module name="lwh-RESTful" target="1.5" />
+      <module name="lwh-Shiro" target="1.5" />
+      <module name="lwh-shiro-jar" target="1.5" />
+      <module name="lwh-Solr" target="1.5" />
+      <module name="lwh-source" target="1.5" />
+      <module name="lwh-spring-security" target="1.5" />
+      <module name="lwh-spring4" target="1.5" />
+      <module name="lwh-springmvc4" target="1.5" />
+      <module name="lwh-sso" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

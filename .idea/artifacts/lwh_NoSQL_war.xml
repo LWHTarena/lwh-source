@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lwh-NoSQL:war">
+    <output-path>$PROJECT_DIR$/lwh-NoSQL/target</output-path>
+    <root id="archive" name="lwh-NoSQL.war">
+      <element id="artifact" artifact-name="lwh-NoSQL:war exploded" />
+    </root>
+  </artifact>
+</component>

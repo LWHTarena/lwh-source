@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>lwh-source</artifactId>
+        <groupId>com.lwhtarena.sourcecode</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>lwh-RESTful</artifactId>
+    <packaging>war</packaging>
+    <name>lwh-RESTful Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+    <dependencies>
+
+        <!--restful API
+             从基于Spring的应用程序创建遵循HATEOAS原则的REST表示。
+        -->
+        <dependency>
+            <groupId>org.springframework.hateoas</groupId>
+            <artifactId>spring-hateoas</artifactId>
+            <version>0.23.0.RELEASE</version>
+        </dependency>
+
+    </dependencies>
+    <build>
+        <finalName>lwh-RESTful</finalName>
+    </build>
+</project>

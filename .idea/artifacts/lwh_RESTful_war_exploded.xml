@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="lwh-RESTful:war exploded">
+    <output-path>$PROJECT_DIR$/lwh-RESTful/target/lwh-RESTful</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="lwh-RESTful" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework.hateoas:spring-hateoas:0.23.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.22" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/lwh-RESTful/target/lwh-RESTful/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="lwh-RESTful/web/Web" />
+    </root>
+  </artifact>
+</component>

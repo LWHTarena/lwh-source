@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lwh-Solr:war">
+    <output-path>$PROJECT_DIR$/lwh-Solr/target</output-path>
+    <root id="archive" name="lwh-Solr.war">
+      <element id="artifact" artifact-name="lwh-Solr:war exploded" />
+    </root>
+  </artifact>
+</component>

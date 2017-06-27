@@ -1,0 +1,30 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <taglib>
+    <taglib-uri>yazdforum.tld</taglib-uri>
+    <taglib-location>/WEB-INF/yazdforum.tld</taglib-location>
+  </taglib>
+
+  <taglib>
+    <taglib-uri>http://jakarta.apache.org/taglibs/datetime-1.0</taglib-uri>
+    <taglib-location>/WEB-INF/datetime.tld</taglib-location>
+  </taglib>
+
+  <taglib>
+    <taglib-uri>http://jakarta.apache.org/taglibs/request-1.0</taglib-uri>
+    <taglib-location>/WEB-INF/request.tld</taglib-location>
+  </taglib>
+
+  <taglib>
+    <taglib-uri>http://jakarta.apache.org/taglibs/response-1.0</taglib-uri>
+    <taglib-location>/WEB-INF/response.tld</taglib-location>
+  </taglib>
+
+  <taglib>
+    <taglib-uri>http://jakarta.apache.org/taglibs/session-1.0</taglib-uri>
+    <taglib-location>/WEB-INF/session.tld</taglib-location>
+  </taglib>
+</web-app>

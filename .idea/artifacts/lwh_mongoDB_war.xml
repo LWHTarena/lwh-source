@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lwh-mongoDB:war">
+    <output-path>$PROJECT_DIR$/lwh-mongoDB/target</output-path>
+    <root id="archive" name="lwh-mongoDB.war">
+      <element id="artifact" artifact-name="lwh-mongoDB:war exploded" />
+    </root>
+  </artifact>
+</component>

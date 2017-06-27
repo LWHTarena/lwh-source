@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/lwh-bbs" />
+    <file type="web" url="file://$PROJECT_DIR$/lwh-jpa" />
+    <file type="web" url="file://$PROJECT_DIR$/lwh-lucene5" />
+    <file type="web" url="file://$PROJECT_DIR$/lwh-lucene55" />
+    <file type="web" url="file://$PROJECT_DIR$/lwh-mongoDB" />
+    <file type="web" url="file://$PROJECT_DIR$/lwh-mybatis" />
+    <file type="web" url="file://$PROJECT_DIR$/lwh-NoSQL" />
+    <file type="web" url="file://$PROJECT_DIR$/lwh-quartz" />
+    <file type="web" url="file://$PROJECT_DIR$/lwh-redis" />
+    <file type="web" url="file://$PROJECT_DIR$/lwh-RESTful" />
+    <file type="web" url="file://$PROJECT_DIR$/lwh-Shiro" />
+    <file type="web" url="file://$PROJECT_DIR$/lwh-Solr" />
+    <file type="web" url="file://$PROJECT_DIR$/lwh-spring-security" />
+    <file type="web" url="file://$PROJECT_DIR$/lwh-spring4" />
+    <file type="web" url="file://$PROJECT_DIR$/lwh-springmvc4" />
+    <file type="web" url="file://$PROJECT_DIR$/lwh-sso" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/lwh-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/lwh-spring4/pom.xml" />
+        <option value="$PROJECT_DIR$/lwh-springmvc4/pom.xml" />
+        <option value="$PROJECT_DIR$/lwh-quartz/pom.xml" />
+        <option value="$PROJECT_DIR$/lwh-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/lwh-lucene5/pom.xml" />
+        <option value="$PROJECT_DIR$/lwh-sso/pom.xml" />
+        <option value="$PROJECT_DIR$/lwh-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/lwh-spring-security/pom.xml" />
+        <option value="$PROJECT_DIR$/lwh-Solr/pom.xml" />
+        <option value="$PROJECT_DIR$/lwh-NoSQL/pom.xml" />
+        <option value="$PROJECT_DIR$/lwh-Shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/lwh-mongoDB/pom.xml" />
+        <option value="$PROJECT_DIR$/lwh-JVM/pom.xml" />
+        <option value="$PROJECT_DIR$/lwh-bbs/pom.xml" />
+        <option value="$PROJECT_DIR$/lwh-common/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

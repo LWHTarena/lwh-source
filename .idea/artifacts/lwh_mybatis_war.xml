@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lwh-mybatis:war">
+    <output-path>$PROJECT_DIR$/lwh-mybatis/target</output-path>
+    <root id="archive" name="lwh-mybatis.war">
+      <element id="artifact" artifact-name="lwh-mybatis:war exploded" />
+    </root>
+  </artifact>
+</component>

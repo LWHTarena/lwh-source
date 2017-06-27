@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lwh-RESTful:war">
+    <output-path>$PROJECT_DIR$/lwh-RESTful/target</output-path>
+    <root id="archive" name="lwh-RESTful.war">
+      <element id="artifact" artifact-name="lwh-RESTful:war exploded" />
+    </root>
+  </artifact>
+</component>

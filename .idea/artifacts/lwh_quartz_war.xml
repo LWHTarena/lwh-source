@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lwh-quartz:war">
+    <output-path>$PROJECT_DIR$/lwh-quartz/target</output-path>
+    <root id="archive" name="lwh-quartz.war">
+      <element id="artifact" artifact-name="lwh-quartz:war exploded" />
+    </root>
+  </artifact>
+</component>
