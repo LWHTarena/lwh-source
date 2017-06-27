@@ -41,8 +41,18 @@ public class Quickstart {
             log.info("当前value"+value);
         }
 
+        /****************************************
+         * 测试当前的用户是否已经被认证,即是否已经登陆
+         * 调subject的isAuthenticated()
+         ***************************************/
         if(!currentUser.isAuthenticated()){
+            /******************************************
+             * 把用户和密码封装为UsernamePasswordToken对象
+             ******************************************/
             UsernamePasswordToken token = new UsernamePasswordToken("lonestarr", "vespa");
+            /************
+             * 记住我
+             ************/
             token.setRememberMe(true);
             try {
                 currentUser.login(token);
