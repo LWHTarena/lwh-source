@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+    <!--配置bean,
+        class:bean全类名，通过反射的反射在IOC容器中创建bean，所以要求bean中必须有无参数的构造器
+        id：标识容器中的bean。id唯一性
+    -->
+    <bean id="hello" class="com.lwhtarena.sourcecode.spring.beans.Helloworld">
+        <property name="name" value="spring"/>
+    </bean>
+
+    <!-- 通过构造方法来配置bena的属性
+        使用构造器注入属性值可以指定参数的位置和参数的类型！以区分重载的构造器！
+    -->
+    <bean id="car" class="com.lwhtarena.sourcecode.spring.beans.Car">
+        <constructor-arg value="Audi" type="java.lang.String"/>
+        <constructor-arg value="Shanghai" index="1"/>
+        <constructor-arg value="300000"/>
+    </bean>
+
+    <!--使用构造器注入属性值可以指定参数位置和参数的类型！以区分重载的构造器！-->
+    <bean id="car2" class="com.lwhtarena.sourcecode.spring.beans.Car">
+        <constructor-arg value="baoma" type="java.lang.String"/>
+        <!--如果字面值包含特殊字符可以使用<![CDATA[]]>包裹起来
+            属性值也可以使用value直接点进行配置
+        -->
+        <constructor-arg type="java.lang.String">
+            <value><![CDATA[<SHANGHAI*>]]></value>
+        </constructor-arg>
+        <constructor-arg type="int">
+            <value>250</value>
+        </constructor-arg>
+    </bean>
+
+    <bean id="person" class="com.lwhtarena.sourcecode.spring.beans.Person">
+        <property name="name" value="李文浩"/>
+        <property name="age" value="27"/>
+        <!--可以使用property的ref属性建立bean之间的引用关系-->
+        <!--<property name="car" ref="car2"/>-->
+        <!--<property name="car">-->
+            <!--<ref bean="car2"/>-->
+        <!--</property>-->
+
+        <!--内部bean-->
+        <property name="car">
+            <bean class="com.lwhtarena.sourcecode.spring.beans.Car">
+                <constructor-arg value="li"/>
+                <constructor-arg value="changan"/>
+                <constructor-arg value="2000000" type="int"/>
+            </bean>
+        </property>
+        <property name="car.maxSpeed" value="260"/>
+    </bean>
+
+    <bean id="person2" class="com.lwhtarena.sourcecode.spring.beans.Person">
+        <constructor-arg value="liwenhao"/>
+        <constructor-arg value="25"/>
+        <constructor-arg ref="car"/>
+        <!--为级联属性，注意：属性需要先初始化后才可以为级联属性赋值，否则会有异常，和struts2不同。-->
+        <property name="car.maxSpeed" value="250"/>
+    </bean>
+
+    <!--测试如何配置集合属性-->
+    <bean id="person3" class="com.lwhtarena.sourcecode.spring.beans.Person">
+        <property name="name" value="周星驰"/>
+        <property name="age" value="58"/>
+        <property name="cars">
+            <!--使用list节点为list类型的属性赋值，类似还有set;map 用entry-->
+            <list>
+                <ref bean="car"/>
+                <ref bean="car2"/>
+                <bean class="com.lwhtarena.sourcecode.spring.beans.Car">
+                    <constructor-arg value="刘德华"/>
+                    <constructor-arg value="benchi"/>
+                    <constructor-arg value="200000000" type="int"/>
+                </bean>
+
+            </list>
+        </property>
+    </bean>
+
+    <!--配置Properties属性值-->
+    <bean id="dataSource" class="com.lwhtarena.sourcecode.spring.beans.DataSource">
+        <property name="properties">
+            <!--使用props和prop子节点来为Properties属性赋值-->
+            <props>
+                <prop key="user">root</prop>
+                <prop key="pwd">tarena</prop>
+                <prop key="jdbcUrl">jdbc:mysql:///test</prop>
+                <prop key="driverClass">com.mysql.jdbc.Driver</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- 配置单例的集合bean，以供多个bean进行引用 -->
+    <util:list id="cars">
+        <ref bean="car"/>
+        <ref bean="car2"/>
+    </util:list>
+
+    <bean id="person4" class="com.lwhtarena.sourcecode.spring.beans.Person">
+        <property name="name" value="jack"/>
+        <property name="age" value="29"/>
+        <property name="cars" ref="cars"/>
+    </bean>
+
+    <!--通过p命名空间为bean的属性赋值，需要先导入p命名空间。相对于传统的配置方式更加简洁-->
+    <bean id="person5" class="com.lwhtarena.sourcecode.spring.beans.Person"
+          p:age="30" p:name="Queen" p:cars-ref="cars"/>
+
+</beans>

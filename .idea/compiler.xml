@@ -19,10 +19,12 @@
         <module name="lwh-quartz" />
         <module name="lwh-redis" />
         <module name="lwh-RESTful" />
+        <module name="lwh-Shiro" />
+        <module name="lwh-shiro" />
         <module name="lwh-shiro-jar" />
         <module name="lwh-Solr" />
+        <module name="lwh-spring-jar" />
         <module name="lwh-spring-security" />
-        <module name="lwh-spring4" />
         <module name="lwh-springmvc4" />
         <module name="lwh-sso" />
       </profile>
@@ -42,12 +44,14 @@
       <module name="lwh-quartz" target="1.5" />
       <module name="lwh-redis" target="1.5" />
       <module name="lwh-RESTful" target="1.5" />
-      <module name="lwh-Shiro" target="1.5" />
-      <module name="lwh-shiro-jar" target="1.5" />
+      <module name="lwh-shiro" target="1.8" />
+      <module name="lwh-Shiro" target="1.8" />
+      <module name="lwh-shiro-jar" target="1.8" />
       <module name="lwh-Solr" target="1.5" />
       <module name="lwh-source" target="1.5" />
+      <module name="lwh-spring-jar" target="1.8" />
       <module name="lwh-spring-security" target="1.5" />
-      <module name="lwh-spring4" target="1.5" />
+      <module name="lwh-spring4" target="1.8" />
       <module name="lwh-springmvc4" target="1.5" />
       <module name="lwh-sso" target="1.5" />
     </bytecodeTargetLevel>

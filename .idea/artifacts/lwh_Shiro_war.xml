@@ -1,8 +1,8 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="lwh-Shiro:war">
-    <output-path>$PROJECT_DIR$/lwh-Shiro/target</output-path>
-    <root id="archive" name="lwh-Shiro.war">
-      <element id="artifact" artifact-name="lwh-Shiro:war exploded" />
+  <artifact type="war" name="lwh-shiro:war">
+    <output-path>$PROJECT_DIR$/lwh-shiro/target</output-path>
+    <root id="archive" name="lwh-shiro.war">
+      <element id="artifact" artifact-name="lwh-shiro:war exploded" />
     </root>
   </artifact>
 </component>
